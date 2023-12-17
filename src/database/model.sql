@@ -21,8 +21,8 @@ create table activation_codes(
     ac_createdat timestamp with time zone default current_timestamp
 );
 
-drop table if exists contacts cascade;
-create table contacts(
+drop table if exists contracts cascade;
+create table contracts(
     contract_id uuid default uuid_generate_v4() primary key,
     contract_number text not null,
     contract_phone_number text not null,
